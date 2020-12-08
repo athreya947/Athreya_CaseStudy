@@ -1,7 +1,7 @@
 node {
  
  stage('Git CheckOut') {
-    git branch: 'main', url: 'https://github.com/athreya947/Athreya_CaseStudy.git'
+    git branch: 'main', url: 'https://github.com/anooprbelur/DevOps301_CaseStudy3.git'
  }
  
  def project_path="Jenkins/petclinic-code"
@@ -27,8 +27,6 @@ node {
  stage('Archive Artifacts') {
     archive 'target/*.war'
  }
-
- 
 
  }
  
