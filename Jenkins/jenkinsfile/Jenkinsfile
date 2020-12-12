@@ -2,7 +2,7 @@ node {
  try {
 
  
- emailext body: 'Pipeline QA test!!', subject: 'Pipeline Job is triggered', to: 'athreya.joshi10@gmail.com'
+ emailext body: 'Pipeline QA test!!', subject: 'Pipeline Job is triggered', to: 'swasthi.joshi2014@gmail.com'
 
  
  stage('Git CheckOut') {
@@ -74,7 +74,7 @@ rtUpload (
  }
  
  } catch (err) {
-  emailext body: "${err}", subject: 'Pipeline Failed!!', to: 'athreya.joshi10@gmail.com'
+  emailext body: "${err}", subject: 'Pipeline Failed!!', to: 'swasthi.joshi2014@gmail.com'
 	 }
 	 
 }
