@@ -53,6 +53,13 @@ rtUpload (
 )
 }
 
+	  stage('SonarQube Code Check')
+    {
+        withSonarQubeEnv('SonarQube') {
+                sh 'mvn clean package sonar:sonar'
+        }
+    }
+	 
 
  stage('Getting Ready For Ansible') {
     sh 'cp -rf target/*.war ../../Ansible/Tomcat/files/'
