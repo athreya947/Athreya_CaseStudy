@@ -77,7 +77,7 @@ rtUpload (
  }
  
  } catch (err) {
-    # emailext body: "${err}", subject: 'Pipeline Job Failed!!', to: 'athreya.joshi10@gmail.com'
+  
 	 }
 	 
 }
